@@ -40,3 +40,92 @@ form button:hover{
     background: #d88771;
     color: white;
 }
+
+ul{
+    font-size: 40px;
+    color: black;
+    list-style-type: none;
+    box-shadow: 0 2px 4px lightslategrey;
+    border: 1px solid gray;
+    width: 300px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin: 10px auto;
+    padding-top: 10px;
+}
+
+li{
+    position: relative;
+    padding: 5px;
+    caret-color: transparent;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+
+li:last-child{
+    border-bottom: none;
+}
+
+.editinput{
+    width: 100%;
+    padding: 6px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    caret-color: transparent;
+    box-sizing: border-box;
+    font-size: 14px;
+
+}
+
+.editinput:focus {
+    outline: none;
+    border-color: #4287f5; 
+    caret-color: black;
+  }
+  
+  .editbtn{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s ease;
+  }
+  .editbtn:hover {
+    color: #00cc00;
+  }
+  
+  .deletebtn {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s ease;
+  }
+  
+  .deletebtn:hover {
+    color: #ff0000;
+  }
+  
+  .fa-delete-left:before {
+    content: "\f2ed";
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fade-in 0.5s ease;
+  }
